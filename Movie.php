@@ -117,8 +117,21 @@ $movies2 = new Movie("il Signore degli anelli", 20, "english", true, "iucewhfiue
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <?php echo $movies->getTitle() ?>
-    </div>
+    <ul>
+       <li>
+            <h1>TITOLO: <?php echo $movies->getTitle() ?></li> </h1> 
+       <li>PREZZO: <?php echo $movies->getPrice() ?></li> 
+       <li>LANGUAGE: <?php echo $movies->getLanguage() ?></li> 
+       <li>RENTAL: <?php echo $movies->getRental() ?></li> 
+       <li>DESCRIPTION: <?php echo $movies->getDescription() ?></li> 
+    </ul>
+    <ul>
+       <li>
+            <h1>TITOLO: <?php echo $movies2->getTitle() ?></li> </h1> 
+       <li>PREZZO: <?php echo $movies2->getPrice() ?></li> 
+       <li>LANGUAGE: <?php echo $movies2->getLanguage() ?></li> 
+       <li>RENTAL: <?php echo $movies2->getRental() ?></li> 
+       <li>DESCRIPTION: <?php echo $movies2->getDescription() ?></li> 
+    </ul>
 </body>
 </html>
