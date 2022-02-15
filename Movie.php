@@ -16,7 +16,11 @@ class Movie
         $this->title = $title;
         $this->price = $price;
         $this->language = $language;
-        $this->rental = $rental;
+        if ($rental == true) {
+            $this->rental = "true";
+        }else{
+            $this->rental = "false";
+        }
         $this->description = $description;
     }
 
@@ -102,6 +106,7 @@ class Movie
 }
 
 $movies = new Movie("avengers" , 30, "turkish" , false, "eiufheiuvebqiuqb");
+$movies->setTitle("Alice nel paese delle meraviglie");
 
 $movies2 = new Movie("il Signore degli anelli", 20, "english", true, "iucewhfiuewh");
 
